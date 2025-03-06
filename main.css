@@ -27,12 +27,56 @@
   }
   
   body {
-    background-color: #d8a7d8;
+    background-color: #186854;
     color: black;
-  
     font-family: "Rubik", serif;
     font-size: 16px;
     font-weight: 600;
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
+
+  .ruler {
+    height: 60px;
+    border-top: 3px darkgoldenrod solid;
+    border-bottom: 3px darkgoldenrod solid;
+    background-color: rgb(220, 220, 19);
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .top-lines, .bottom-lines, h2 {
+    height: 30%;
+  }
+
+  .top-lines, .bottom-lines {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .big-box {
+    border-left: 2px darkgoldenrod solid;
+    border-right: 2px darkgoldenrod solid;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .bottom-big-box {
+    align-items: end;
+  }
+
+  .mini-box {
+    border-right: 2px darkgoldenrod solid;
+    height: 50%;
+    width: 50%;
+  }
+
